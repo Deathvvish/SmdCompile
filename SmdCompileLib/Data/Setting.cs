@@ -114,7 +114,7 @@ namespace SmdCompileLib.Data
         {
             try
             {
-                string json_obj_ = JsonConvert.SerializeObject(GLOBAL.setting);
+                string json_obj_ = JsonConvert.SerializeObject(GLOBAL.setting , Formatting.Indented);
 
                 EveMessage($"SerializeObject");
 
