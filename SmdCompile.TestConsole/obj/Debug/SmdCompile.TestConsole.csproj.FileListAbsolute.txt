@@ -1,0 +1,9 @@
+C:\Users\UnderKo\source\repos\SmdCompile\Compile\SmdCompile.TestConsole.exe.config
+C:\Users\UnderKo\source\repos\SmdCompile\Compile\SmdCompile.TestConsole.exe
+C:\Users\UnderKo\source\repos\SmdCompile\Compile\SmdCompile.TestConsole.pdb
+C:\Users\UnderKo\source\repos\SmdCompile\SmdCompile.TestConsole\obj\Debug\SmdCompile.TestConsole.csproj.AssemblyReference.cache
+C:\Users\UnderKo\source\repos\SmdCompile\SmdCompile.TestConsole\obj\Debug\SmdCompile.TestConsole.csproj.SuggestedBindingRedirects.cache
+C:\Users\UnderKo\source\repos\SmdCompile\SmdCompile.TestConsole\obj\Debug\SmdCompile.TestConsole.csproj.CoreCompileInputs.cache
+C:\Users\UnderKo\source\repos\SmdCompile\SmdCompile.TestConsole\obj\Debug\SmdCompile.TestConsole.csproj.CopyComplete
+C:\Users\UnderKo\source\repos\SmdCompile\SmdCompile.TestConsole\obj\Debug\SmdCompile.TestConsole.exe
+C:\Users\UnderKo\source\repos\SmdCompile\SmdCompile.TestConsole\obj\Debug\SmdCompile.TestConsole.pdb

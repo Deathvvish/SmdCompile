@@ -1,0 +1,82 @@
+﻿<UserControl xmlns:Controls="clr-namespace:SmdCompile.Controls"  x:Class="SmdCompile.Page.Compile"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SmdCompile.Page"
+             mc:Ignorable="d" 
+             xmlns:syntax="clr-namespace:UI.SyntaxBox;assembly=UI.SyntaxBox"
+             d:DesignHeight="450" d:DesignWidth="800" AllowDrop="True" Drop="UserControl_Drop" >
+  
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="400"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Background="{StaticResource back_select}">
+            <ListBox x:Name="list_projects" 
+                     Margin="0,0,0,45"
+                     ScrollViewer.HorizontalScrollBarVisibility="Hidden" ScrollViewer.VerticalScrollBarVisibility="Hidden">
+                
+            </ListBox>
+            <StackPanel Margin="5" VerticalAlignment="Bottom" Orientation="Horizontal" HorizontalAlignment="Left" >
+                <Border x:Name="conv_o" Height="35" Padding="10,5,10,5" Margin="0" Style="{StaticResource style_border_hover_d}">
+                    <Label Content="Convert" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}"></Label>
+                </Border>
+                <Border x:Name="conv_a" Height="35" Padding="10,5,10,5" Margin="5,0,0,0" Style="{StaticResource style_border_hover_d}">
+                    <Label Content="Convert all" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}"></Label>
+                </Border>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1">
+            <TabControl   Background="{x:Null}"  BorderBrush="{x:Null}" Foreground="{x:Null}">
+                <TabItem  Header="QC Editor">
+                    <Grid>
+                        <Grid x:Name="Compile_Editors" Background="{StaticResource back_select}">
+                            <Controls:EasyEditor/>
+                        </Grid>
+                        <Grid Margin="5" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                            <Border x:Name="editor_save" Height="35" Padding="10,5,10,5" Margin="0" Style="{StaticResource style_border_hover_d}" PreviewMouseLeftButtonDown="editor_save_PreviewMouseLeftButtonDown">
+                                <Label Content="Save" Padding="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="{x:Null}"></Label>
+                            </Border>
+                        </Grid>
+                       
+                    </Grid>
+                </TabItem>
+                <TabItem Header="Log">
+                    <Grid Background="{StaticResource back_select}">
+                        <TextBox 
+                        x:Name="TextBox_Log"
+                        syntax:SyntaxBox.Enable="True"
+                        syntax:SyntaxBox.ExpandTabs="True"
+                        syntax:SyntaxBox.AutoIndent="True"
+                        syntax:SyntaxBox.ShowLineNumbers="True"
+                        syntax:SyntaxBox.LineNumbersBackground="Transparent"
+                        syntax:SyntaxBox.LineNumbersForeground="White"
+                        Background="Transparent"
+                        AcceptsReturn="True" 
+                        AcceptsTab="True"
+                        Foreground="White"
+                        VerticalScrollBarVisibility="Auto"
+                        HorizontalScrollBarVisibility="Auto"
+                        Padding="0,0,0,0"
+                        BorderThickness="0"
+                        
+                        FontFamily="Cascadia Code SemiLight"
+                        FontSize="12" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                            <syntax:SyntaxBox.SyntaxDrivers>
+                                <syntax:SyntaxConfig>
+                                    <syntax:RegexRule Pattern="WARNING|ERROR" Op="Line"  Foreground="#E23D30" ></syntax:RegexRule>
+                                    <syntax:RegexRule Pattern="bytes" Op="Line" Foreground="#569CD6" ></syntax:RegexRule>
+                                </syntax:SyntaxConfig>
+                            </syntax:SyntaxBox.SyntaxDrivers>
+                        </TextBox>
+                    </Grid>
+
+                </TabItem>
+           
+            </TabControl>
+        </Grid>
+        
+    </Grid>
+</UserControl>

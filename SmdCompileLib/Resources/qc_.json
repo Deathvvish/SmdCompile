@@ -1,0 +1,39 @@
+{
+
+  "string": {
+    "Foreground": "#FFFFFF",
+    "Background": null,
+    "DriverOperation": null,
+    "IsRegex": true,
+    "Keywords": "[\\w\\W]+"
+  },
+  "number": {
+    "Foreground": "#98C379",
+    "Background": null,
+    "DriverOperation": null,
+    "IsRegex": true,
+    "Keywords": "[0-9]+"
+  },
+  "func": {
+    "Foreground": "#547DCF",
+    "Background": null,
+    "DriverOperation": null,
+    "IsRegex": true,
+    "Keywords": "(\\$[\\w\\W]+? )|(\\$[\\w\\W]+?)"
+  },
+  "covichki": {
+    "Foreground": "#CD9780",
+    "Background": null,
+    "DriverOperation": null,
+    "IsRegex": true,
+    "Keywords": "\"[\\s\\S]+?\""
+  },
+  "{}": {
+    "Foreground": "#A93A99",
+    "Background": null,
+    "DriverOperation": null,
+    "IsRegex": true,
+    "Keywords": "\\{|\\}"
+  }
+
+}

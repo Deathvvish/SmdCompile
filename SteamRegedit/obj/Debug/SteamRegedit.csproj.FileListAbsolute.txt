@@ -1,0 +1,9 @@
+C:\Users\UnderKo\source\repos\SmdCompile\Compile\SteamRegedit.exe.config
+C:\Users\UnderKo\source\repos\SmdCompile\Compile\SteamRegedit.exe
+C:\Users\UnderKo\source\repos\SmdCompile\Compile\SteamRegedit.pdb
+C:\Users\UnderKo\source\repos\SmdCompile\SteamRegedit\obj\Debug\SteamRegedit.csproj.AssemblyReference.cache
+C:\Users\UnderKo\source\repos\SmdCompile\SteamRegedit\obj\Debug\SteamRegedit.csproj.SuggestedBindingRedirects.cache
+C:\Users\UnderKo\source\repos\SmdCompile\SteamRegedit\obj\Debug\SteamRegedit.csproj.CoreCompileInputs.cache
+C:\Users\UnderKo\source\repos\SmdCompile\SteamRegedit\obj\Debug\SteamRegedit.csproj.CopyComplete
+C:\Users\UnderKo\source\repos\SmdCompile\SteamRegedit\obj\Debug\SteamRegedit.exe
+C:\Users\UnderKo\source\repos\SmdCompile\SteamRegedit\obj\Debug\SteamRegedit.pdb

@@ -1,0 +1,52 @@
+﻿<UserControl xmlns:Controls1="clr-namespace:SmdCompile.Controls"  xmlns:Controls="clr-namespace:FluentUI.Controls;assembly=FluentUI"  x:Class="SmdCompile.Page.Setting"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:SmdCompile.Page"
+             mc:Ignorable="d"  
+             d:DesignHeight="450" d:DesignWidth="800" Background="{StaticResource back_select}">
+    <Grid>
+        <Grid x:Name="grid" Margin="5">
+          
+           
+            <ListBox>
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel>
+                        <Label Content="Path to game" FontSize="14" HorizontalContentAlignment="Center"></Label>
+                        <Border Style="{StaticResource def_border}" Background="#33FFFFFF" CornerRadius="4" HorizontalAlignment="Stretch">
+                            <TextBox x:Name="path_TextBox" Style="{StaticResource tb_style}" Margin="4,0,4,0" MaxWidth="500" Height="30" HorizontalAlignment="Stretch" />
+                        </Border>
+                    </StackPanel>
+                    <Border x:Name="button_openfolderdialog" Style="{StaticResource def_border}" Margin="5,0,0,0" Background="#33FFFFFF" CornerRadius="4" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+                        <Controls1:lico Content="&#xe838;" Style="{StaticResource style_label_icon}" FontSize="18" Height="30" Width="30"/>
+                    </Border>
+                    <Border x:Name="button_getinstallapplication" Style="{StaticResource def_border}" Margin="5,0,0,0" Background="#33FFFFFF" CornerRadius="4" HorizontalAlignment="Stretch" VerticalAlignment="Bottom">
+                        <Controls1:lico Content="&#xe773;"  Style="{StaticResource style_label_icon}" FontSize="18" Height="30" Width="30"/>
+                    </Border>
+                </StackPanel>
+
+                <StackPanel Margin="10,0,0,0">
+                    <StackPanel Orientation="Horizontal">
+                        <Controls:ValidChecker x:Name="label_steam_appid" />
+                        <Label Margin="10,0,0,0" Foreground="White" Content="steam_appid.txt" HorizontalAlignment="Left" VerticalAlignment="Stretch"></Label>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Controls:ValidChecker x:Name="label_studiomdl"/>
+                        <Label Margin="10,0,0,0" Foreground="White" Content="studiomdl.exe" HorizontalAlignment="Left"></Label>
+                    </StackPanel>
+                </StackPanel>
+                
+                
+                <Border Margin="5"></Border>
+                <Border Style="{StaticResource def_border}">
+                    <Controls:CheckBox x:Name="blured_chbox" Text="Blured" IsChecked="False"/>
+                </Border>
+              
+            </ListBox>
+            <local:PageInstallApplication x:Name="install_app"  Width="350" HorizontalAlignment="Right" VerticalAlignment="Stretch"/>
+
+             
+        </Grid>
+    </Grid>
+</UserControl>

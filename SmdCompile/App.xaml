@@ -1,0 +1,22 @@
+﻿<Application x:Class="SmdCompile.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:SmdCompile"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="/FluentUI;component/Style/TabControl.xaml"/>
+                <ResourceDictionary Source="/FluentUI;component/Style/TextBox.xaml"/>
+                <ResourceDictionary Source="/FluentUI;component/Style/ListBox.xaml"/>
+                <ResourceDictionary Source="/FluentUI;component/Style/ListBoxItem.xaml"/>
+                <ResourceDictionary Source="/FluentUI;component/Style/Border.xaml"/>
+                <ResourceDictionary Source="/FluentUI;component/Style/CheckBox.xaml"/>
+                <ResourceDictionary Source="Style\DicStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
