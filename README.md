@@ -9,11 +9,5 @@ SmdCompile - это визуальная обёртка Studiomdl.
 
 ![Кря!](https://i.imgur.com/sCqKhbS.png)
 ![Кря!](https://i.imgur.com/Pe1UO0f.png)
-<li>
-Data/setting.json
-</li>
-![Кря!](https://i.imgur.com/VGLADGO.png)
-<li>
-Syntax/qc_.json
-</li>
-![Кря!](https://i.imgur.com/ziobLvM.png)
+![Data/setting.json](https://i.imgur.com/VGLADGO.png)
+![Syntax/qc_.json](https://i.imgur.com/ziobLvM.png)
